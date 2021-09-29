@@ -1,0 +1,12 @@
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">  <%= @friend.first_name %>   <%= @friend.last_name %></h1>
+      <p class="lead my-3"> <%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %> </p>
+<%= link_to 'Edit', edit_friend_path(@friend), class: 'btn btn-primary' %> 
+<%= link_to 'Back', friends_path, class: 'btn btn-dark' %>
+    </div>
+  </div>
+  </div>
+  </main>
